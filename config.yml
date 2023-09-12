@@ -10,7 +10,7 @@ steps:
     - mvn test-compile
     - mvn test
   test:
-    - mvn package
+    - mvn packagenn
   security:
     - mvn integration-test
   audit:
