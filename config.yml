@@ -1,5 +1,5 @@
 config:
-  dockerfile: .woloxci/Dockerfile
+  dockerfile: Dockerfile
   project_name: frontend-bootstrap
 
 steps:
