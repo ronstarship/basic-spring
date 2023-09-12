@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/openjdk/jdk:17-mariner
+FROM eclipse-temurin:17-jdk-alpine
    
 ARG ARTIFACT_NAME
 ARG APP_PORT
