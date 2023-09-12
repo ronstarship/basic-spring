@@ -1,6 +1,6 @@
 config:
   dockerfile: Dockerfile
-  project_name: frontend-bootstrap
+  project_name: ronis-project
 
 steps:
   analysis:
