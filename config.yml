@@ -1,0 +1,28 @@
+config:
+  dockerfile: Dockerfile
+  project_name: ronis project
+
+steps:
+  analysis:
+    - mvn validate
+    - mvn compile
+  setup_db:
+    - mvn test-compile
+    - mvn test
+  test:
+    - mvn package
+  security:
+    - mvn integration-test
+  audit:
+    - mvn install
+    - mvn deploy
+
+
+environment:
+  RAILS_ENV: test
+  GIT_COMMITTER_NAME: a
+  GIT_COMMITTER_EMAIL: b
+  LANG: C.UTF-8
+
+
+timeout: 600
